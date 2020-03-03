@@ -1,7 +1,13 @@
 import unittest
 
 from Calculator.Calculator import Calculator
-from CsvReader.CsvReader import CsvReader
+from Calculator.Addition import addition
+from Calculator.Subtraction import subtraction
+from Calculator.Multiplication import multiplication
+from Calculator.Division import division
+from Calculator.Exponentiation import exponentiation
+from Calculator.Logarithm import logarithm
+from Calculator.SquareRoot import squareRoot
 
 
 class MyTestCase(unittest.TestCase):
@@ -11,15 +17,29 @@ class MyTestCase(unittest.TestCase):
     def test_instantiate_calculator(self):
         self.assertIsInstance(self.calculator, Calculator)
 
-    def test_subtraction(self):
-        test_data = CsvReader("Tests/Data/subtraction.csv").data
-        for row in test_data:
-            result = float(row['Result'])
-            self.assertEqual(self.calculator.subtract(row['Value 1'], row['Value 2']), result)
-            self.assertEqual(self.calculator.result, result)
-
     def test_results_property(self):
         self.assertEqual(self.calculator.result, 0)
+
+    def test_addition(self):
+        self.assertEqual(6, addition(3, 3))
+
+    def test_subtraction(self):
+        self.assertEqual(10, subtraction(25, 15))
+
+    def test_multiplication(self):
+        self.assertEqual(48, multiplication(12, 4))
+
+    def test_division(self):
+        self.assertEqual(3, division(12, 4))
+
+    def test_exponentiation(self):
+        self.assertEqual(9, exponentiation(3, 2))
+
+    def test_logarithm(self):
+        self.assertEqual(6, logarithm(64, 2))
+
+    def test_squareRoot(self):
+        self.assertEqual(5, squareRoot(25))
 
 
 if __name__ == '__main__':
