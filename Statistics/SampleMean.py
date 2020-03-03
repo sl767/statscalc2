@@ -1,6 +1,5 @@
-from MathOperations.addition import Addition
-from MathOperations.subtraction import Subtraction
-from MathOperations.division import Division
+from Calculator.Addition import addition
+from Calculator.Division import division
 from Statistics.Getsample import getSample
 
 
@@ -10,5 +9,5 @@ def sample_mean(data, sample_size):
     sample = getSample(data, sample_size)
     num_values = len(sample)
     for num in sample:
-        total = Addition(total, num)
-    return Division(total, num_values)
+        total = addition(total, num)
+    return division(total, num_values)
