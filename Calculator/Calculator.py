@@ -2,7 +2,7 @@ from Calculator.Subtraction import subtraction
 from Calculator.Addition import addition
 from Calculator.Exponentiation import exponentiation
 from Calculator.Division import division
-from Calculator.Logarithim import logarithm
+from Calculator.Logarithm import logarithm
 from Calculator.SquareRoot import squareRoot
 
 
