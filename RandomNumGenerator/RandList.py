@@ -2,11 +2,11 @@ from numpy.random import seed
 import random
 
 
-class RandomList():
+class RandomList:
     @staticmethod
-    def list_Of_Ints(num1, num2, length, theSeed):
+    def listOfInts(num1, num2, length, theSeed):
         if isinstance(num1, float):
-            return listFloats(num1, num2, length, theSeed)
+            return listOfFloats(num1, num2, length, theSeed)
 
         aList = []
         seed(theSeed)
@@ -18,7 +18,7 @@ class RandomList():
         return aList
 
     @staticmethod
-    def list_Of_Floats(num1, num2, length, theSeed):
+    def listOfFloats(num1, num2, length, theSeed):
         aList = []
         seed(theSeed)
 

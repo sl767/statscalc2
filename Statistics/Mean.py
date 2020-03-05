@@ -1,10 +1,7 @@
-from Calculator.Division import division
-from Calculator.Addition import addition
+import numpy
 
 
-def mean(data):
-    num_values = len(data)
-    total = 0
-    for num in data:
-        total = addition(total, num)
-    return division(total, num_values)
+class Mean:
+    @staticmethod
+    def mean(data):
+        return numpy.mean(data)

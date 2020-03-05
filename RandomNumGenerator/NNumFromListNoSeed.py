@@ -1,8 +1,8 @@
 import random
 
-class SelectNumNoSeed():
+class SelectNumbersNoSeed():
     @staticmethod
-    def selNumbers(aList, rangeNum):
+    def selectNumbers(aList, rangeNum):
         newList =[]
         listSize = len(aList)
 
