@@ -1,6 +1,6 @@
 import random
 
-class SelectNumbersNoSeed():
+class SelectNumbersNoSeed:
     @staticmethod
     def selectNumbers(aList, rangeNum):
         newList =[]

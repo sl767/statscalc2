@@ -6,7 +6,7 @@ class RandomList:
     @staticmethod
     def listOfInts(num1, num2, length, theSeed):
         if isinstance(num1, float):
-            return listOfFloats(num1, num2, length, theSeed)
+            return num1.listOfFloats(num1, num2, length, theSeed)
 
         aList = []
         seed(theSeed)
