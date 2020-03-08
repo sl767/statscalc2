@@ -9,4 +9,3 @@ class RandomList:
         while len(data) != length:
             data.append(RandomNum.randomNumSeed(seed, x, y))
         return data
-    

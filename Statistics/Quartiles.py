@@ -1,7 +1,7 @@
 import numpy
 
 
-class Quartile():
+class Quartile:
     @staticmethod
     def quartile(data):
         q1 = numpy.quantile(data, .25)
