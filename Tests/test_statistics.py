@@ -2,14 +2,13 @@ import unittest
 from numpy.random import seed
 from numpy.random import randint
 from Statistics.Statistics import Statistics
-import pprint
+
 
 
 class MyTestCase(unittest.TestCase):
     def setUp(self) -> None:
         seed(5)
         self.testData = randint(0, 10, 20)
-        #pprint.pprint(self.testData)
         self.statistics = Statistics()
 
     def test_instantiate_calculator(self):

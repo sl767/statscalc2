@@ -1,7 +1,7 @@
 import unittest
-from RandomNumGenerator.randPick import RandPick
-from RandomNumGenerator.randomNum import RandomNum
-from RandomNumGenerator.randomList import RandomList
+from RandomNumGenerator.RandPick import RandPick
+from RandomNumGenerator.RandNum import RandomNum
+from RandomNumGenerator.RandList import RandomList
 
 
 class MyTestCase(unittest.TestCase):
